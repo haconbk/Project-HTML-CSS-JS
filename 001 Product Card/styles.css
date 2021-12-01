@@ -29,12 +29,10 @@ body {
 }
 .product_image {
     width: 85%;
-    transition: 0.5s;
 }
 .product_name, .product_price {
     font-weight: bold;
     text-align: center;
-    transition: 0.5s;
 }
 .product_name {
     color: #4CAF50;
@@ -50,7 +48,6 @@ body {
     margin: 5px;
     opacity: 0;
     visibility: hidden;
-    transition: 0.5s;
 }
 .product_size {
     margin-top: 300px;
@@ -81,7 +78,6 @@ body {
     background-color: black;
 }
 .product_action button {
-    /* font-weight: bold; */
     font-size: 15px;
     color: white;
     margin: 0 5px;
@@ -90,7 +86,6 @@ body {
     border: 1px solid #4caf50;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.5s;
 }
 
 /* hiệu ứng khi di chuột qua */
@@ -120,6 +115,7 @@ body {
 }
 .product_action button:hover {
     transform: scale(0.8);
+    transition: 0.5s;
 }
 .product_size span:hover {
     box-shadow: 0 -2px 7px #4caf50, 0 2px 7px #4caf50, -2px 0 7px #4caf50, 2px 0 7px #4caf50;
