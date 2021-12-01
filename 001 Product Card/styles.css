@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right, #4CAF50, #3d8880);
+    overflow: hidden;
+}
+.product_card {
+    width: 320px;
+    height: 400px;
+    display: block;
+    margin: 100px auto;
+    background-color: #272d40;
+    border: 0 solid;
+    border-radius: 15px;
+}
+.product_card_title, .product_like {
+    font-size: 20px;
+    color: whitesmoke;
+}
+.product_card_title {
+    padding: 10px;
+}
+.product_like {
+    float: left;
+}
+.product_cart {
+    float: right;
+}
+.product_image {
+    width: 85%;
+    transition: 0.5s;
+}
+.product_name, .product_price {
+    font-weight: bold;
+    text-align: center;
+    transition: 0.5s;
+}
+.product_name {
+    color: #4CAF50;
+    font-size: 30px;
+}
+.product_price {
+    color: #fff;
+    font-size: 25px;
+}
+.product_size, .product_color, .product_action {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.product_size {
+    margin-top: 300px;
+}
+.product_size span {
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: white;
+    color: #272d40;
+    cursor: pointer;
+}
+.product_color span {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.product_color span.green {
+    background-color: green;
+}
+.product_color span.red {
+    background-color: red;
+}
+.product_color span.black {
+    background-color: black;
+}
+.product_action button {
+    /* font-weight: bold; */
+    font-size: 15px;
+    color: white;
+    margin: 0 5px;
+    padding: 5px 20px;
+    background-color: #4caf50;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.product_action button:hover {
+    transform: scale(0.8);
+}
+/* hiệu ứng khi di chuột qua */
+/* effect when mouse hover */
+.product_card:hover .product_image {
+    transform: translateY(-90px) rotate(-20deg);
+}
+.product_card:hover .product_name {
+    transform: translate(-30px, -70px);
+    transition: 0.5s;
+}
+.product_card:hover .product_price {
+    transform: translate(-95px, -70px);
+    transition: 0.5s;
+}
+.product_card:hover .product_size {
+    margin-top: -60px;
+    transition: 0.5s;
+}
+.product_card:hover .product_color {
+    margin-top: -10px;
+    transition: 0.5s;
+}
+.product_card:hover .product_size,.product_card:hover  .product_color,.product_card:hover  .product_action {
+    opacity: 1;
+    visibility: visible;
+}
