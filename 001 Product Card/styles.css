@@ -92,9 +92,7 @@ body {
     cursor: pointer;
     transition: 0.5s;
 }
-.product_action button:hover {
-    transform: scale(0.8);
-}
+
 /* hiệu ứng khi di chuột qua */
 /* effect when mouse hover */
 .product_card:hover .product_image {
@@ -105,7 +103,7 @@ body {
     transition: 0.5s;
 }
 .product_card:hover .product_price {
-    transform: translate(-95px, -70px);
+    transform: translate(-100px, -70px);
     transition: 0.5s;
 }
 .product_card:hover .product_size {
@@ -119,4 +117,13 @@ body {
 .product_card:hover .product_size,.product_card:hover  .product_color,.product_card:hover  .product_action {
     opacity: 1;
     visibility: visible;
+}
+.product_action button:hover {
+    transform: scale(0.8);
+}
+.product_size span:hover {
+    box-shadow: 0 -2px 7px #4caf50, 0 2px 7px #4caf50, -2px 0 7px #4caf50, 2px 0 7px #4caf50;
+}
+.product_color span:hover {
+    box-shadow: 0 -2px 7px white, 0 2px 7px white, -2px 0 7px white, 2px 0 7px white;
 }
