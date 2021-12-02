@@ -29,6 +29,7 @@ body {
 }
 .product_image {
     width: 85%;
+	transition: 0.5s;
 }
 .product_name, .product_price {
     font-weight: bold;
