@@ -1,6 +1,12 @@
 * {
     box-sizing: border-box;
 }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 900px) {
+    .profile_card {
+        max-width: 450px;
+    }
+}
 body {
     background-image: linear-gradient(to right, #4CAF50, #3d8880);
     overflow: hidden;
@@ -35,7 +41,7 @@ body {
     cursor: pointer;
 }
 .profile_image:hover {
-    transform: scale(5) translateY(30%);
+    transform: scale(8) translateY(30%);
     transition: 0.25s;
     overflow: hidden;
 }

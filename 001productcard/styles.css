@@ -49,6 +49,7 @@ body {
     margin: 5px;
     opacity: 0;
     visibility: hidden;
+    transition: 0.5s;
 }
 .product_size {
     margin-top: 300px;
